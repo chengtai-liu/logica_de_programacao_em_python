@@ -87,3 +87,54 @@ aluno = {
 }
 
 print(aluno)
+
+# 13. Acessando vlaors do dicionário
+
+print(aluno["nome"])
+print(aluno["idade"])
+print(aluno["nota"])
+
+# 14. Alterando valores
+
+aluno["nota"] = 9.0
+print(aluno)
+
+# 15. Adicionado novos dados
+aluno["curso"] = "Informática"
+print(aluno)
+
+# 16. Removendo dados
+del aluno["curso"]
+print(aluno)
+
+
+# 17. Percorrendo um dicionário
+for chave in aluno:
+    print(chave)
+
+    # Podemos acessar chave e valor ao mesmo tempo.
+    for chave, valor in aluno.items():
+        print(f"{chave}: {valor}")
+
+
+
+
+# 18. Verificando uma chave
+if "nome" in aluno:
+    print("A chave nome existe.")
+
+# 19. Dicionário com Lista
+aluno = {
+    "nome": "Maria",
+    "notas": [8.0, 7.5, 9.0]
+}
+
+print(aluno["nome"])
+print(aluno["notas"])
+
+
+# Podemos acessar um elemento da lista dentro do dicionário
+print(aluno["curso"][0])
+
+
+# 20. Percorrendo um Dicionário
